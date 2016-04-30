@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<style>
+    body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #F5E5C0;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #EA6045;
+    color: #F5E5C0;
+}
+li a:hover:not(.active) {
+    background-color: #2F3440;
+    color: #F5E5C0;
+}
+div .page {
+   display: none;
+}
+</style></head>
+    <body style="background-color:#556;">
+      <ul>
+        <li><a class="menuItem" href="#home">Home</a></li>
+        <li><a class="menuItem" href="#photography">Photgraphy</a></li>
+        <li><a class="menuItem" href="#resume">Resume</a></li>
+        <li><a class="menuItem" href="#projects">Projects</a></li>
+        <li><a class="menuItem" href="#contact">Contact</a></li>
+      </ul>
+
+
+
+  <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+      <div id="home" class="page">
+       <h1><center><font size="20" color="#F8CA4D">Home </font></center></h1>
+       <p><center><font size="5" color="#EA6045">Hello Im Nolan!</font></center></p>
+       <center><a href="https://www.instagram.com/nolanbetts/?hl=en"><img src="http://orig15.deviantart.net/875d/f/2013/183/1/2/winstoreinslogo_by_mrinf3ction-d6bmkkp.png" height="100" width="100" /></a></center>
+       <center><a href="https://twitter.com/mr__betts"><img src="https://g.twimg.com/Twitter_logo_blue.png"height="81" width="100"  /></a></center>
+       <p><font size="3" color="#F5E5C0">
+         The goal of this website is to serve as a platform for displaying my personal goals and acomplishments. On this website you can see information about me, my resume, photography, projects I've worked on and just any general information. </font>
+       </p>
+     </div>
+     <div id="photography" class="page">
+       <h1><center><font size="20" color="#F8CA4D">Photography </font></center></h1>
+     </div>
+     <div id="resume" class="page">
+       <h1><center><font size="20" color="#F8CA4D">Resume </font></center></h1>
+     </div>
+     <div id="projects" class="page">
+       <h1><center><font size="20" color="#F8CA4D">Projects </font></center></h1>
+     </div>
+     <div id="contact" class="page">
+       <h1><center><font size="20" color="#F8CA4D">Contact </font></center></h1>
+     </div>
+</div>
+
+<script>
+$(".page").hide()
+$('[href="'+window.location.hash+'"]').addClass("active")
+$(window.location.hash).show()
+$(".menuItem").on("click",function(){
+$(".active").removeClass("active")
+$(this).addClass("active")
+$(".page").hide()
+window.location.hash = $(this).attr("href")
+$($(this).attr("href")).show()
+return false
+})
+
+</script>
+</body>
+</html>
