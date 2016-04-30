@@ -73,9 +73,17 @@ div .page {
 </div>
 
 <script>
-$(".page").hide()
-$('[href="'+window.location.hash+'"]').addClass("active")
-$(window.location.hash).show()
+//$(".page").hide()
+if(window.location.hash)
+{
+  $('[href="'+window.location.hash+'"]').addClass("active")
+  $(window.location.hash).show()
+}
+else
+{
+  $('[href="#home"]').addClass("active")
+  $("#home").show()
+}
 $(".menuItem").on("click",function(){
 $(".active").removeClass("active")
 $(this).addClass("active")
