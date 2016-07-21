@@ -21,16 +21,25 @@ h1 {
 	color: AntiqueWhite;
 }
 
+h2 {
+	font-size: 56px;
+	background-color: AntiqueWhite;
+	color: rgb(46, 105, 163);
+}
+
 .hero {
 	padding: 250px 0;
+	background-image: url("http://wallpaper.zone/img/5398993.jpg");
+	background-size: cover;
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 
-.hero a {
-	color: AntiqueWhite;
-	font-size: 1.25em;
-	text-decoration: none;
+p {
+	background-color: AntiqueWhite;
+	font-size: 2rem;
+	color: rgb(46, 105, 163);
 }
+
 
 #footer {
 	font-size: 1.0rem;
@@ -69,4 +78,4 @@ ul.topnav li a:hover:not(.active) {
 	ul.topnav li {
 		float: none;
 	}
-}s
+}
