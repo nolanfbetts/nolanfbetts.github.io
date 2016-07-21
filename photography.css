@@ -1,0 +1,72 @@
+body {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+	background: rgb(46, 105, 163);
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, rgb(46, 105, 163), RoyalBlue);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgb(46, 105, 163), RoyalBlue);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgb(46, 105, 163), RoyalBlue);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgb(46, 105, 163), RoyalBlue);
+	/* Standard syntax (must be last) */
+}
+
+h1 {
+	font-family: Palatino, 'Palatino Linotype', serif;
+	font-size: 75px;
+	color: AntiqueWhite;
+}
+
+.hero {
+	padding: 250px 0;
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+p {
+	background-color: AntiqueWhite;
+	font-size: 2rem;
+	color: rgb(46, 105, 163);
+}
+
+#footer {
+	font-size: 1.0rem;
+}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li {
+	border-right: 1px solid rgb(46, 105, 163);
+}
+
+ul.topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #111;
+}
+
+@media screen and (max-width: 600px) {
+	ul.topnav li.right,
+	ul.topnav li {
+		float: none;
+	}
+}
