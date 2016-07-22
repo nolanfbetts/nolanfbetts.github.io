@@ -22,15 +22,32 @@ webpage for Nolan Betts -->
   <h1>Contact</h1>
   <h2>Use the form below to leave me an email!</h2>
 
-<form action="MAILTO:nolanfbetts@protonmail.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name" value="your name"><br>
-E-mail:<br>
-<input type="text" name="mail" value="your email"><br>
-Comment:<br>
-<input type="text" name="comment" value="your comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
+<form action="takeform.php" method="POST">
+
+  <p>
+    <input name="email" size="64" maxlength="64"/>
+    <b>Your</b> Email Address
+  </p>
+
+  <p>
+    <input name="realname" size="64" maxlength="64"/>
+    Your Real Name (<i>so our reply won't get stuck in your spam folder</i>)
+  </p>
+
+  <p>
+    <input name="subject" size="64" maxlength="64"/>
+    Subject Of Your Message
+  </p>
+
+  <p>
+    <i>Please enter the text of your message in the field that follows.</i>
+  </p>
+
+  <textarea name="body" rows="10" cols="60"> </textarea>
+
+  <p>
+    <input type="submit" name="send" value="Send Your Message"/>
+  </p>
 </form>
 
   <p id="footer">&#9829; Made With Love 2016</p>
