@@ -1,8 +1,8 @@
-html {
-	height: 100%;
+html,body {
+	height: auto;
 	margin: 0;
 	text-align: center;
-	width: 100%;
+	width: auto;
 	background: rgb(46, 105, 163);
 	/* For browsers that do not support gradients */
 	background: -webkit-linear-gradient(left top, rgb(46, 105, 163), RoyalBlue);
@@ -13,12 +13,10 @@ html {
 	/* For Firefox 3.6 to 15 */
 	background: linear-gradient(to bottom right, rgb(46, 105, 163), RoyalBlue);
 	/* Standard syntax (must be last) */
-}
-body {
-	height: 100%;
-	margin: 0;
-	text-align: center;
-	width: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 
